@@ -5,7 +5,12 @@ export default function Search() {
   return (
     <div className="Search">
       <form>
-        <input type="text" name="Enter a city" className="city-search" />
+        <input
+          type="text"
+          name="Enter a city"
+          className="city-search"
+          placeholder="Enter a city"
+        />
         <input type="submit" value="Search" className="search-button" />
         <input
           type="submit"
