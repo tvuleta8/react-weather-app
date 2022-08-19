@@ -14,6 +14,11 @@ root.render(
       <hr />
       <Current />
     </div>
+    <div class="sourceCode">
+      <a href="https://github.com/tvuleta8/react-weather-app" target="_blank">
+        Source Code
+      </a>
+    </div>
   </React.StrictMode>
 );
 

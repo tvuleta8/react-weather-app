@@ -22,3 +22,8 @@ body {
       rgba(0, 0, 0, 0.5) 100%
     );
 }
+
+.sourceCode {
+  margin: 0 40px;
+  padding: 20px;
+}
