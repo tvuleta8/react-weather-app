@@ -4,6 +4,7 @@ import "./index.css";
 import "./App";
 import Search from "./Search";
 import Current from "./Current";
+import "bootstrap/dist/css/bootstrap.css";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
