@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Search.css";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 export default function Search() {

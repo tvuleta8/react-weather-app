@@ -1,39 +1,44 @@
 import React from "react";
 import "./Current.css";
-import "./Search.js";
+import FormattedDate from "./FormattedDate";
+import WeatherIcon from "./WeatherIcon";
 
-export default function Current() {
+export default function Current(props) {
   return (
-    <div className="row">
-      <div className="col-sm-6 now">
-        <h1 className="selectedCity">Paris</h1>
-        <h1>
-          <img
-            src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png"
-            alt="Clear"
-            id="icon"
-          />
-        </h1>
-        <h1 className="degrees">12°C</h1>
-        <h6 className="units">
-          <a href="" id="units-celsius" className="active">
-            °C
-          </a>
-          |
-          <a href="" id="units-fahrenheit" className="">
-            °F
-          </a>
-        </h6>
-      </div>
-      <div className="col-sm-6 now extraInfo">
-        <h5 className="currentTime">18:00</h5>
-        <h5 className="weatherDescription">Cloudy</h5>
-        <h5 className="humidity">
-          Humidity: <span className="humidityValue">73</span>%
-        </h5>
-        <h5 className="wind">
-          Wind: <span className="windValue">2.68</span> km/h
-        </h5>
+    <div className="Current">
+      <div className="row">
+        <div className="col-sm-6 now">
+          <h1 className="selectedCity">{props.data.city}</h1>
+          <h1>
+            <WeatherIcon code="props.data.icon" alt={props.data.description} />
+            <img src={props.data.icon} alt={props.data.description} id="icon" />
+          </h1>
+          <h1 className="degrees">{Math.round(props.data.temperature)}°C</h1>
+          <h6 className="units">
+            <a href="" id="units-celsius" className="active">
+              °C
+            </a>
+            |
+            <a href="" id="units-fahrenheit" className="">
+              °F
+            </a>
+          </h6>
+        </div>
+        <div className="col-sm-6 now extraInfo">
+          <h5 className="currentTime">
+            <FormattedDate date={props.data.date} />
+          </h5>
+          <h5 className="weatherDescription text-capitalizer">
+            {props.data.description}
+          </h5>
+          <h5 className="humidity">
+            Humidity:{" "}
+            <span className="humidityValue">{props.data.humidity}</span>%
+          </h5>
+          <h5 className="wind">
+            Wind: <span className="windValue">{props.data.wind}</span> km/h
+          </h5>
+        </div>
       </div>
     </div>
   );
