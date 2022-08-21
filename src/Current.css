@@ -1,3 +1,7 @@
+.Current {
+  padding-top: 20px;
+}
+
 .degrees {
   font-size: 48px;
   padding: 5px;
@@ -7,6 +11,7 @@
   font-weight: 400;
 }
 
-.now {
+.extraInfo {
   text-align: center;
+  padding: 30px 0;
 }

@@ -9,26 +9,26 @@ export default function Current(props) {
     <div className="Current">
       <div className="row">
         <div className="col-sm-6 now">
-          <h1 className="selectedCity">{props.data.city}</h1>
+          <h1 className="selectedCity">{props.info.city}</h1>
           <h1>
-            <WeatherIcon code="props.data.icon" alt={props.data.description} />
-            <img src={props.data.icon} alt={props.data.description} id="icon" />
+            <WeatherIcon code="props.data.icon" alt={props.info.description} />
+            <img src={props.info.icon} alt={props.info.description} id="icon" />
           </h1>
-          <WeatherTemperature celsius={props.data.temperature} />
+          <WeatherTemperature celsius={props.info.temperature} />
         </div>
         <div className="col-sm-6 now extraInfo">
           <h5 className="currentTime">
-            <FormattedDate date={props.data.date} />
+            <FormattedDate date={props.info.date} />
           </h5>
-          <h5 className="weatherDescription text-capitalizer">
-            {props.data.description}
+          <h5 className="weatherDescription text-capitalize">
+            {props.info.description}
           </h5>
           <h5 className="humidity">
             Humidity:{" "}
-            <span className="humidityValue">{props.data.humidity}</span>%
+            <span className="humidityValue">{props.info.humidity}</span>%
           </h5>
           <h5 className="wind">
-            Wind: <span className="windValue">{props.data.wind}</span> km/h
+            Wind: <span className="windValue">{props.info.wind}</span> km/h
           </h5>
         </div>
       </div>

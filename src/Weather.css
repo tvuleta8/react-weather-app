@@ -11,12 +11,11 @@
 }
 
 form {
-  width: 100%;
-  max-width: 700px;
+  max-width: 80%;
   display: flex;
   align-items: center;
   border-radius: 30px;
-  padding: 10px 20px;
+  padding: 10px 0;
   outline: none;
 }
 
@@ -29,11 +28,10 @@ form {
   padding: 10px 15px;
 }
 
-.search-city,
+.city-search,
 .search-button,
 .location-button {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin: 0 5px;
 }
 
 .degrees {
