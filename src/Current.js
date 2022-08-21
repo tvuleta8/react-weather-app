@@ -11,7 +11,11 @@ export default function Current(props) {
         <div className="col-sm-6 now">
           <h1 className="selectedCity">{props.info.city}</h1>
           <h1>
-            <WeatherIcon code="props.data.icon" alt={props.info.description} />
+            <WeatherIcon
+              code="props.data.icon"
+              alt={props.info.description}
+              size={52}
+            />
             <img src={props.info.icon} alt={props.info.description} id="icon" />
           </h1>
           <WeatherTemperature celsius={props.info.temperature} />
