@@ -9,7 +9,11 @@ export default function App() {
         <Weather defaultCity="Paris" />
       </div>
       <footer className="sourceCode">
-        <a href="https://github.com/tvuleta8/react-weather-app" target="_blank">
+        <a
+          href="https://github.com/tvuleta8/react-weather-app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Source Code
         </a>
       </footer>
