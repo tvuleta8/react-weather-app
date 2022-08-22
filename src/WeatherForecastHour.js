@@ -13,8 +13,8 @@ export default function WeatherForecastHour(props) {
 
   return (
     <div class="WeatherForecastHour">
-      <span className="time">{hour()}</span> <br />
-      <WeatherIcon code={props.data.weather[0].icon} size={10} />
+      <span className="time">{hour()}h</span> <br />
+      <WeatherIcon code={props.data.weather[0].icon} size={30} />
       <br />
       {Math.round(props.data.temp)}°
     </div>
