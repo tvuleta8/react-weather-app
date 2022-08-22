@@ -17,6 +17,7 @@ form {
   border-radius: 30px;
   padding: 10px 0;
   outline: none;
+  margin-left: 40px;
 }
 
 .city-search {
