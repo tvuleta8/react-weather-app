@@ -53,11 +53,6 @@ export default function Weather(props) {
               autoComplete="off"
             />
             <input type="submit" value="Search" className="search-button" />
-            <input
-              type="submit"
-              value="Use current location"
-              className="location-button"
-            />
           </form>
         </div>
         <Current info={weatherData} />
