@@ -3,6 +3,7 @@ import axios from "axios";
 import "./Weather.css";
 import Current from "./Current";
 import Daily from "./Daily";
+import Hourly from "./Hourly";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -49,6 +50,7 @@ export default function Weather(props) {
               placeholder="Enter a city"
               autoFocus="on"
               onChange={handleCityChange}
+              autoComplete="off"
             />
             <input type="submit" value="Search" className="search-button" />
             <input
@@ -59,6 +61,9 @@ export default function Weather(props) {
           </form>
         </div>
         <Current info={weatherData} />
+        <hr />
+        <h1 className="laterHeading">Today + Tomorrow</h1>
+        <Hourly coordinates={weatherData.coordinates} />
         <hr />
         <h1 className="weekForecastHeading">This Week</h1>
         <Daily coordinates={weatherData.coordinates} />
