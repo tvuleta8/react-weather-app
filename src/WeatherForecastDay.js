@@ -11,15 +11,15 @@ export default function WeatherForecastDay(props) {
 
   return (
     <div className="WeatherForecastDay">
-      <div class="weekdays">{day()}</div>
-      <div class="temp">
-        <span class="maxTemp">{Math.round(props.data.temp.max)}°</span> |{" "}
-        <span class="minTemp">{Math.round(props.data.temp.min)}°</span>
+      <div className="weekdays">{day()}</div>
+      <div className="temp">
+        <span className="maxTemp">{Math.round(props.data.temp.max)}°</span> |{" "}
+        <span className="minTemp">{Math.round(props.data.temp.min)}°</span>
       </div>
-      <div class="weatherIcon">
+      <div className="weatherIcon">
         <WeatherIcon code={props.data.weather[0].icon} size={40} />
       </div>
-      <div class="weatherName text-capitalize">
+      <div className="weatherName text-capitalize">
         {props.data.weather[0].description}
       </div>
     </div>

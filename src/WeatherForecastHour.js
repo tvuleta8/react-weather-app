@@ -12,7 +12,7 @@ export default function WeatherForecastHour(props) {
   }
 
   return (
-    <div class="WeatherForecastHour">
+    <div className="WeatherForecastHour">
       <span className="time">{hour()}h</span> <br />
       <WeatherIcon code={props.data.weather[0].icon} size={30} />
       <br />
