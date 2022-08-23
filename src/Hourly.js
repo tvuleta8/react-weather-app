@@ -21,7 +21,7 @@ export default function Hourly(props) {
       <div className="Hourly">
         <div className="row">
           {forecast.map(function (hourlyForecast, index) {
-            if (index % 4 == 0) {
+            if (index % 4 === 0) {
               return (
                 <div className="col" key={index}>
                   <WeatherForecastHour data={hourlyForecast} />
