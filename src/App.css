@@ -15,12 +15,7 @@
 }
 
 body {
-  background: radial-gradient(73% 147%, #eadfdf 59%, #ece2df 100%),
-    radial-gradient(
-      91% 146%,
-      rgba(255, 255, 255, 0.5) 47%,
-      rgba(0, 0, 0, 0.5) 100%
-    );
+  background: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .App footer {
